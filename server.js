@@ -9,7 +9,7 @@ const app = express()
 app.use(cors())
 app.use(express.json())
 
-mongoose.connect(process.env.Mongo_Data)
+mongoose.connect(process.env.MONGO_DATA)
     .then(() => console.log("You have successfully connected to Mongodb"))
     .catch(() => console.log("There was an issue connecting to Mongodb"))
 
